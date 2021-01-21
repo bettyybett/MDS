@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="VAMBA.css">
+<script src="VAMBA.js">
+</head>
+<body>
+</script>
+
+    <div class="container">
+      <label for="name"><b>Nume</b></label>
+      <input type="text" placeholder="Introdu nume" name="uname" required>
+
+      <label for="name"><b>Prenume</b></label>
+      <input type="text" placeholder="Introdu prenume" name="uname" required>
+	  
+	   <label for="telefon"><b>Telefon</b></label>
+      <input type="text" placeholder="Introdu numar de telefon" name="uname" required>
+	  
+	   <label for="mail"><b>E-mail</b></label>
+      <input type="text" placeholder="Introdu adresa de e-mail" name="uname" required>
+	  
+      <label for="password"><b>Parola</b></label>
+      <input type="password" id="parola" placeholder="Introdu parola" name="psw" required>
+   
+      <label for="password"><b>Confirma parola</b></label>
+      <input type="password" id="confirmareparola" placeholder="Introdu parola" name="psw" required>
+	  <p id="parolagresita" style="color:red;"></p>
+      <button id="submit" type="submit" onclick="Parole()">Inregistrare</button>
+    </div>
+
+</div>
+<script>
+function Parole() {
+  var x = document.getElementById("parola").value;
+  var y = document.getElementById("confirmareparola").value;
+  if(x!=y)
+	document.getElementById("parolagresita").innerHTML = "Parolele nu corespund."
+}
+</script>
+</body>
